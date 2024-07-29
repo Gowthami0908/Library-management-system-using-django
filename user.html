@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome user</title>
+</head>
+<body>
+You are able to view borrow  and return the books in the library
+<h1>Library Management</h1>
+
+    <!-- Form to View a Book -->
+    <h2>View a Book</h2>
+    <form action="/view_book" method="get">
+        <label for="view_book_id">Book ID:</label>
+        <input type="text" id="view_book_id" name="view_book_id"><br><br>
+        <input type="submit" value="View Book">
+    </form>
+
+    <!-- Form to Borrow a Book -->
+    <h2>Borrow a Book</h2>
+    <form action="/borrow_book" method="post">
+        <label for="borrow_book_id">Book ID:</label>
+        <input type="text" id="borrow_book_id" name="borrow_book_id"><br><br>
+        <label for="borrower_name">Your Name:</label>
+        <input type="text" id="borrower_name" name="borrower_name"><br><br>
+        <input type="submit" value="Borrow Book">
+    </form>
+
+    <!-- Form to Return a Book -->
+    <h2>Return a Book</h2>
+    <form action="/return_book" method="post">
+        <label for="return_book_id">Book ID:</label>
+        <input type="text" id="return_book_id" name="return_book_id"><br><br>
+        <input type="submit" value="Return Book">
+    </form>
+</body>
+</html>
